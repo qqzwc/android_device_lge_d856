@@ -1,0 +1,11 @@
+[
+  {
+    "repository": "android_device_lge_g3duo-common",
+    "target_path": "device/lge/g3duo-common"
+  },
+  {
+    "repository": "android_vendor_lge_d859",
+    "target_path": "vendor/lge/d859"
+  }
+
+]

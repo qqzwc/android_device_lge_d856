@@ -15,14 +15,14 @@
 #
 
 # inherit from common g3
--include device/lge/g3-common/BoardConfigCommon.mk
+-include device/lge/g3duo-common/BoardConfigCommon.mk
 
-TARGET_OTA_ASSERT_DEVICE := g3,d856,d857,d858,d859
+TARGET_OTA_ASSERT_DEVICE := g3,d859,d857,d858,d859
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH_BCM := true
-BOARD_BLUEDROID_VENDOR_CONF := device/lge/d856/configs/vnd_g3.conf
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/d856/bluetooth
+BOARD_BLUEDROID_VENDOR_CONF := device/lge/d859/configs/vnd_g3.conf
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/d859/bluetooth
 
 # Audio
 AUDIO_FEATURE_ENABLED_FM := true
@@ -37,18 +37,19 @@ TARGET_GLOBAL_CPPFLAGS += -DANDROID_MULTI_SIM
 TARGET_QCOM_NO_FM_FIRMWARE := true
 
 # Kernel
-TARGET_KERNEL_CONFIG := cyanogenmod_d856_defconfig
+TARGET_KERNEL_CONFIG := mokee_d859_defconfig
 TARGET_REQUIRES_BUMP := true
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 16777216
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 16777216
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2164260864
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2583691264
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 27426023424
+BOARD_CACHEIMAGE_PARTITION_SIZE := 889192448
 TARGET_USERIMAGES_USE_F2FS := true
 
 # Recovery
-TARGET_RECOVERY_FSTAB := device/lge/d856/rootdir/etc/fstab.g3
+TARGET_RECOVERY_FSTAB := device/lge/d859/rootdir/etc/fstab.g3
 
 # NFC
 BOARD_NFC_CHIPSET := pn547
@@ -69,4 +70,4 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 TARGET_QCOM_NO_FM_FIRMWARE := true
 
 # inherit from the proprietary version
--include vendor/lge/d856/BoardConfigVendor.mk
+-include vendor/lge/d859/BoardConfigVendor.mk

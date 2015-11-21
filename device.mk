@@ -17,11 +17,11 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/lge/d856/d856-vendor.mk)
+$(call inherit-product-if-exists, vendor/lge/d859/d859-vendor.mk)
 
 # Audio
 PRODUCT_COPY_FILES += \
-    device/lge/g3-common/configs/mixer_paths_bcm.xml:system/etc/mixer_paths.xml 
+    device/lge/g3duo-common/configs/mixer_paths_bcm.xml:system/etc/mixer_paths.xml 
 
 # NFC
 PRODUCT_COPY_FILES += \
@@ -59,4 +59,4 @@ PRODUCT_COPY_FILES += \
 		hardware/broadcom/wlan/bcmdhd/firmware/bcm4339/fw_bcmdhd_mfg.bin:system/etc/firmware/fw_bcmdhd_mfg.bin
 
 # common g3
-$(call inherit-product, device/lge/g3-common/g3.mk)
+$(call inherit-product, device/lge/g3duo-common/g3.mk)
