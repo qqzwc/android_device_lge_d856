@@ -17,7 +17,7 @@
 # inherit from common g3
 -include device/lge/g3duo-common/BoardConfigCommon.mk
 
-TARGET_OTA_ASSERT_DEVICE := g3,d859,d857,d858,d859
+TARGET_OTA_ASSERT_DEVICE := g3,d856,d857,d858,d859
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH_BCM := true
