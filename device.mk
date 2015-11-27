@@ -21,7 +21,7 @@ $(call inherit-product-if-exists, vendor/lge/d856/d856-vendor.mk)
 
 # Audio
 PRODUCT_COPY_FILES += \
-    device/lge/g3-common/configs/mixer_paths_bcm.xml:system/etc/mixer_paths.xml 
+    device/lge/g3-common/configs/audio/mixer_paths_bcm.xml:system/etc/mixer_paths.xml
 
 # NFC
 PRODUCT_COPY_FILES += \
@@ -56,7 +56,7 @@ $(call inherit-product, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)
 PRODUCT_COPY_FILES += \
     hardware/broadcom/wlan/bcmdhd/firmware/bcm4339/fw_bcmdhd.bin:system/etc/firmware/fw_bcmdhd.bin \
     hardware/broadcom/wlan/bcmdhd/firmware/bcm4339/fw_bcmdhd_apsta.bin:system/etc/firmware/fw_bcmdhd_apsta.bin \
-		hardware/broadcom/wlan/bcmdhd/firmware/bcm4339/fw_bcmdhd_mfg.bin:system/etc/firmware/fw_bcmdhd_mfg.bin
+		hardware/broadcom/wlan/bcmdhd/firmware/bcm4339/fw_bcmdhd_fp.bin:system/etc/firmware/fw_bcmdhd_fp.bin
 
 # common g3
 $(call inherit-product, device/lge/g3-common/g3.mk)

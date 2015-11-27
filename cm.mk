@@ -1,3 +1,4 @@
+
 $(call inherit-product, device/lge/d856/full_d856.mk)
 
 # Inherit some common CM stuff.

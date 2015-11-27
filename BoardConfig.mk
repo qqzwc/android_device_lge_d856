@@ -53,6 +53,7 @@ TARGET_RECOVERY_FSTAB := device/lge/d856/rootdir/etc/fstab.g3
 # NFC
 BOARD_NFC_CHIPSET := pn547
 
+
 # WiFi
 BOARD_WLAN_DEVICE := bcmdhd
 BOARD_HOSTAPD_DRIVER := NL80211
