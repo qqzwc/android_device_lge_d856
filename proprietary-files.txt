@@ -1,35 +1,19 @@
-# Bluetooth
-bin/hci_qcomm_init
-vendor/lib/libbtnv.so
--framework/com.broadcom.bt.jar
-etc/permissions/com.broadcom.bt.xml
-bin/BCM4335_003.001.009.0025.0000_LGIT_TWCS-B221D_TESTONLY.hcd
-bin/BCM4339_003.001.009.0098.0415_B2_KR_ORC.hcd
-bin/BCM4339_003.001.009.0105.0458_LGE_G3L_SPRINT_FM_ORC.hcd
-
-# FM Radio
--framework/com.broadcom.fm.jar
-etc/permissions/com.broadcom.fm.xml
+# Bluetooth firmware
+bin/BCM4339_003.001.009.0105.0458_LGE_G3L_SPRINT_FM_ORC.hcd:etc/firmware/BCM4339_003.001.009.0105.0458_LGE_G3L_SPRINT_FM_ORC.hcd
 
 # GPS
-bin/location-mq
-bin/quipc_igsn
-bin/quipc_main
 bin/xtwifi-client
 bin/xtwifi-inet-agent
 lib/libloc_api_v02.so
-lib/libloc_ds_api.so
 vendor/lib/libalarmservice_jni.so
 vendor/lib/libgeofence.so
 vendor/lib/libizat_core.so
 vendor/lib/liblbs_core.so
 vendor/lib/liblocationservice.so
 vendor/lib/libquipc_os_api.so
-vendor/lib/libquipc_ulp_adapter.so
 vendor/lib/libulp2.so
 vendor/lib/libxtadapter.so
 vendor/lib/libxtwifi_ulp_adaptor.so
-vendor/lib/libxtwifi_zpp_adaptor.so
 
 # Qualcomm framework
 vendor/lib/libdiag.so
@@ -44,17 +28,14 @@ vendor/lib/libqmi_cci.so
 vendor/lib/libqmi_client_qmux.so
 vendor/lib/libqmi_common_so.so
 vendor/lib/libqmi_csi.so
-vendor/lib/libqmi_csvt_srvc.so
 vendor/lib/libqmi_encdec.so
 vendor/lib/libqmiservices.so
-vendor/lib/libqmiservices_ext.so
 
 # Radio
 bin/netmgrd
 bin/qmuxd
 bin/rfs_access
 bin/rmt_storage
-lib/libcnefeatureconfig.so
 lib/libmdmdetect.so
 lib/libril.so
 lib/libuicc.so
@@ -62,23 +43,21 @@ lib/libvss_common_idl.so
 lib/libvss_common_iface.so
 lib/libvss_nv_idl.so
 lib/libvss_nv_iface.so
-vendor/lib/libconfigdb.so
 vendor/lib/libcneapiclient.so
+vendor/lib/libconfigdb.so
 vendor/lib/libnetmgr.so
 vendor/lib/libperipheral_client.so
 vendor/lib/libril-qc-qmi-1.so
-vendor/lib/libqc-opt.so
+vendor/lib/libril-qc-radioconfig.so
 vendor/lib/libril-qcril-hook-oem.so
 vendor/lib/libsmemlog.so
 vendor/lib/libsystem_health_mon.so
--app/btmultisim/btmultisim.apk:app/btmultisim.apk
--framework/btmultisimlibrary.jar
-etc/permissions/btmultisim.xml
--priv-app/DualSimStatus/DualSimStatus.apk:priv-app/DualSimStatus.apk
+vendor/lib/libxml.so
 
 # Sensors
 bin/sensors.qcom
 vendor/lib/hw/sensors.msm8974.so
+vendor/lib/hw/nfc_lg.default.so
 vendor/lib/libsensor1.so
 vendor/lib/libsensor_reg.so
 
